@@ -9,6 +9,9 @@ h1{
     color: #0000FF;
     text-align: end;
 }
+p:lang(it) {
+    background: yellow;
+}
 p{
     color: black;
     text-align: center;
@@ -19,10 +22,88 @@ p{
    width: 100%
 
 }
+
 .second{
     background-color: green;
     font-family: fantasy;
     text-transform: uppercase;
+    height: 100px;
+}
+a:active{
+    background-color: red;
+}
+a:hover{
+     background-color: yellow;
+}
+div > form{
+    height: 50px;
+    width: 80%;
+    text-align: center;
+    
+}
+input:checked{
+    height: 10px;
+    width: 20px;
+    background-color: red;
+}
+label{
+    font: 1rem 'Fira Sans', sans-serif;
+}
+input{
+    margin: .4rem;
+}
+input:focus{
+    background-color: royalblue;
+}
+input[type=text]:disabled{
+    background: #dddddd;
+}
+ul > :first-child{
+    background-color: red;
+    width: 10%;
+}
+p::after{
+    content: "- Remember this";
+}
+p::before{
+    content: "One important thing- ";
+}
+div:empty{
+    width: 30%;
+    height: 30px;
+    background-color: green
+}
+h2::first-letter{
+    width: 10px;
+    height: 30px;
+    color: green;
+}
+a:link{
+    background: pink;
+}
+a:visited{
+    background: blue;
+}
+
+::placeholder{
+    color: green
+}
+input:read-only{
+    background-color: yellow;
+}
+input:required{
+    content: "This is required field";
+    background-color: red;
+}
+p:only-child{
+    background-color: black;
+    content: "This is a one paragraph";
+}
+span:nth-last-child(odd){
+    background-color: blue;
+}
+span:nth-last-child(even){
+    background-color: brown;
 }
     </style>
 </head>
@@ -37,5 +118,83 @@ Hello
     </h1>
 </div>
     </div>
+    <div class="second"><a href="https://www.youtube.com/watch?v=eLTLtUVuuy4&t=10s" target="_blank">
+        Self-driving car</a>
+    </div>
+    <div>
+        Check your speciality
+    <form action="">
+        <input type="radio" id="ML" value="ML Engineer" name="speciality">
+        <label for="ML">ML Engineer</label>
+        <br>
+        <input type="radio" id="DE" value="Data Engineer" name="speciality" >
+        <label for="DE">Data Engineer</label>
+        <br>
+        <input type="radio" id="DA" value="Data Analysts" name="speciality">
+        <label for="DA">Data Analysts</label>
+        <br>
+    </form>
+    <br>
+    <br>
+    Check your skills
+    <form>
+        <input type="checkbox" id="LA" name="skill" value="Linear Algebra">
+        <label for="LA">Linear Algebra</label> <br>
+        <input type="checkbox" id="PT" name="skill" value="Propobility Theory">
+        <label for="PT">Propobility Theory</label> <br>
+        <input type="checkbox" id="VC" name="skill" value="Vector Calculus">
+        <label for="VC">Vector Calculus</label> <br>
+        <input type="checkbox" id="PE" name="skill" value="Point Estimation">
+        <label for="PE">Point Estimation</label> <br>
+        <input type="checkbox" id="IE" name="skill" value="Interval Estimation">
+        <label for="IE">Interval Estimation</label> <br>
+        <input type="checkbox" id="TF" name="skill" value="TensorFlow">
+        <label for="TF">TensorFlow</label> <br>
+        <input type="checkbox" id="torch" name="skill" value="PyTorch">
+        <label for="torch">PyTorch</label> <br>
+        <input type="checkbox" id="Yolo" name="skill" value="Yolo">
+        <label for="Yolo">YoloV4</label> <br>
+    </form>
+    <label for="name">Name</label>
+    <input name="name">
+    <br>
+    <label for="surname">Surname</label>
+    <input name="surname">
+    <br>
+    <label for="Country">Country</label>
+    <input name="Country" disabled="disabled"value="Armenia">
+</div>
+<div>
+<ul>
+    Machine Learning Types:
+   <li>Supervised Learning</li>
+   <li>Unsupervised Learning</li>
+   <li>Reinforcement Learning</li>
+</ul>
+<p>Machine Learning is a very convinent tool</p>
+</div>
+<div></div>
+<h2>
+    Neural Network
+</h2>
+<p lang="it">
+    Hello World!
+</p>
+<input type="text" name="fname" placeholder="AI Engineer">
+<input readonly value="ASDS (Aplied Statystics, Machine Learning and DataScience">
+<input required> 
+<div>
+    <p></p>
+</div>   
+<span>
+    First
+</span>
+<span>
+    Second
+</span>
+<span>
+    Third
+</span>
+<span>Fourth</span>
 </body>
 </html>
